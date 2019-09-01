@@ -12,7 +12,18 @@ img.bg{
     top: 0;
     left: 0;
 }
-            
+.loginpanel,.signuppanel {
+    background-color: #df166aa1;
+    background-image: none;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    -webkit-border-radius: 5px 10px;  /* Safari  */
+    -moz-border-radius: 5px 10px; /* FireFox*/
+}
+.form-label{
+    color: white;
+}
+
 @media screen and (max-width: 1024px){
     img.bg {
         left: 50%;
