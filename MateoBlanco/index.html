@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="shortcut icon" href="./src/img/Logo.ico" />
+  <link rel="shortcut icon" href="./src/img/Logo.ico" />
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,9 +15,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./scripts/js/inicio.js"></script>
 </head>
 
 <body class="bg" background="./src/img/KonradBienestar.jpg">
+  <br>
+  <br>
   <div class="container" style="align-self: center; width: 35%;">
     <div style="align-self: center;">
       <img src="./src/img/KonradLogo.png">
@@ -27,13 +30,13 @@
     <div style="align-items: center; padding-top: 45px; padding-bottom: 45px;">
       <form>
         <label class="form-label" style="width: 5%; margin-left:45px;">Código</label>
-        <input class="form-control" type="text" placeholder="Código" 
+        <input class="form-control" id="code" type="text" placeholder="Código" 
           style="margin-left:45px; width: 40%;" required>
         <label class="form-label" style="width: 5%; margin-left:45px;">Contraseña</label>
-        <input class="form-control" type="password" placeholder="Contraseña"
+        <input class="form-control" id="pass" type="password" placeholder="Contraseña"
           style="width: 40%; margin-left: 45px;">
           <input class="btn btn-success" style="margin-left:50%;
-            margin-top: 10px;align-self:right;" type="submit" value="Ingresar">
+            margin-top: 10px;align-self:right;" type="submit" value="Ingresar" onclick="acceso()">
           <button class="btn btn-danger" style="margin-top:10px;">Limpiar</button>
       </form>
     </div>
