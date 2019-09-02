@@ -1,23 +1,29 @@
-var user = {
-    codigo:"",
-    password:""
-}
+(function(){
+    var app = angular.module('RegistroAcademico',['ngRoute']);
+    app.controller('RegistroController',['$scope','$routeProvider','$location',function($scope,$routeProvider,$location){
+        $scope.user = {
+            codigo: 506151060,
+            password:"h3lctcep0",
+            nombre:"Mateo",
+            apellido:"Blanco",
+            semestre: 5
+        };
 
-var user2 = {
-    codigo: 506151060,
-    password: "h3lctcep0"
-}
-
-var routes = new URL("../pages/User.html");
-
-function acceso(){
-    user.codigo = parseInt(document.getElementById("code").value);
-    user.password = document.getElementById("pass").value;
-    if(user.codigo==user2.codigo){
-        if(user.password == user2.password){
-            location.href = routes;
-            debugger;
-            console.log(window.location.href.toString());
+        $scope.requested={
+            codigo: "",
+            password:"",
+            nombre:"",
+            apellido:"",
+            semestre: ""
         }
-    }
-}
+
+        var acceso = function () {
+            if ($scope.user.codigo == $scope.requested.codigo) {
+                if ($scope.user.password == $scope.requested.password) {
+                    $location.path = '/';
+                    $routeProvider.when('/', { template: './pages/User.html' });
+                }
+            }
+        }
+    }]);
+})();
