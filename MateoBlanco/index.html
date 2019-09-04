@@ -15,12 +15,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./scripts/css/styles1.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-  <script type="text/javascript" src="./scripts/js/app.module.js"></script>
-  <script type="text/javascript" src="./scripts/js/inicio.js"></script>
 </head>
 
-<body class="bg" background="./src/img/KonradBienestar.jpg"  ng-app="RegistroAcademico" ng-controller="RegistroController">
+<body class="bg" background="./src/img/KonradBienestar.jpg">
   <br>
   <br>
   <div class="container" style="align-self: center; width: 35%;">
@@ -30,7 +27,7 @@
   </div>
   <div class="container loginpanel" style="align-content: center; width: 47%;">
     <div style="align-items: center; padding-top: 45px; padding-bottom: 45px;">
-      <form>
+      <form action="./pages/User.html">
         <label class="form-label" style="width: 5%; margin-left:45px;">Código</label>
         <input class="form-control" ng-model="requested.codigo" type="text" placeholder="Código" 
           style="margin-left:45px; width: 40%;" required>
@@ -38,7 +35,7 @@
         <input class="form-control" ng-model="requested.password" type="password" placeholder="Contraseña"
           style="width: 40%; margin-left: 45px;">
           <input class="btn btn-success" style="margin-left:50%;
-            margin-top: 10px;align-self:right;" type="submit" value="Ingresar" onclick="acceso()">
+            margin-top: 10px;align-self:right;" type="submit" value="Ingresar" href="./pages/User.html">
           <button class="btn btn-danger" style="margin-top:10px;">Limpiar</button>
       </form>
     </div>
