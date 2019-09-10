@@ -15,34 +15,35 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./scripts/css/styles1.css">
+  <script type="text/javascript" src="./scripts/js/home.js"></script>
 </head>
 
 <body class="bg" background="./src/img/KonradBienestar.jpg">
   <br>
   <br>
-  <div class="container" style="align-self: center; width: 35%;">
+  <div class="container res-image" style="align-self: center;">
     <div style="align-self: center;">
       <img src="./src/img/KonradLogo.png">
     </div>
   </div>
   <div class="container loginpanel" style="align-content: center; width: 47%;">
     <div style="align-items: center; padding-top: 45px; padding-bottom: 45px;">
-      <form action="./pages/User.html">
+      <form >
         <label class="form-label" style="width: 5%; margin-left:45px;">Código</label>
-        <input class="form-control" ng-model="requested.codigo" type="text" placeholder="Código" 
+        <input class="form-control" id="code" type="text" placeholder="Código" 
           style="margin-left:45px; width: 40%;" required>
         <label class="form-label" style="width: 5%; margin-left:45px;">Contraseña</label>
-        <input class="form-control" ng-model="requested.password" type="password" placeholder="Contraseña"
+        <input class="form-control" id="pass" type="password" placeholder="Contraseña"
           style="width: 40%; margin-left: 45px;">
           <input class="btn btn-success" style="margin-left:50%;
-            margin-top: 10px;align-self:right;" type="submit" value="Ingresar" href="./pages/User.html">
-          <button class="btn btn-danger" style="margin-top:10px;">Limpiar</button>
+            margin-top: 10px;align-self:right;" type="submit" value="Ingresar" onclick="redirect()">
+          <button class="btn btn-danger" style="margin-top:10px;" onclick="clean()">Limpiar</button>
       </form>
     </div>
   </div>
-  <div class="footer">
-    <div class="footer-container form-label" style="background-color:gray;">
-      <p>hecho por Mateo Blanco</p>
+  <div class="footer fixed-bottom">
+    <div class="footer-container form-label" style="background-color: lightgray;opacity: 0.8">
+      <p style="opacity: 1;color: black;">hecho por Mateo Blanco</p>
       <br>
       <br>
       <br>

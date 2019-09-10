@@ -18,10 +18,10 @@
 .loginpanel,.signuppanel {
     background-color: rgba(36, 35, 35, 0.6);
     background-image: none;
-    margin-top: 40px;
-    margin-bottom: 90px;
-    -webkit-border-radius: 5px 10px;  /* Safari  */
-    -moz-border-radius: 5px 10px; /* FireFox*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    -webkit-border-radius: 2% 4%;  /* Safari  */
+    -moz-border-radius: 2% 4%; /* FireFox*/
 }
 
 .form-label{
@@ -31,6 +31,10 @@
 .dropdown-dark{
     color: rgb(255, 255, 255);
     background-color: rgb(55, 56, 63);
+}
+
+.res-image{
+    width: 35%;
 }
 
 @media screen and (max-width: 1024px){
