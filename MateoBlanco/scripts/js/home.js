@@ -12,11 +12,8 @@ var redirect = function(){
 	};
 	if(inputCode == baseUser.codigo && inputPass == baseUser.password)
 	{
-		$(loacation.assign("MateoBlanco/pages/User.html"));
-		//window.location = "../MateoBlanco/pages/User.html";
+		window.location = "../MateoBlanco/pages/User.html";
 	}else{
 		alert("datos erróneos");
-		$(loacation.assign("MateoBlanco/index.html"));
-		//window.location = "../MateoBlanco/index.html";
 	}
 }
