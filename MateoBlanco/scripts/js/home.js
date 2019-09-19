@@ -10,10 +10,12 @@ var redirect = function(){
 		codigo: 506151060,
 		password: "h3lctcep0"
 	};
+	var route = '/MateoBlanco/pages/User.html';
 	if(inputCode == baseUser.codigo && inputPass == baseUser.password)
 	{
-		window.location = "../MateoBlanco/pages/User.html";
+		document.location.href = route;
 	}else{
 		alert("datos erróneos");
-	}
+		document.location.href = '../MateoBlanco/index.html'
+  }
 }
