@@ -16,6 +16,6 @@ var redirect = function(){
 		document.location.href = route;
 	}else{
 		alert("datos erróneos");
-		document.location.href = '../MateoBlanco/index.html';
-	}
+		document.location.href = '../MateoBlanco/index.html'
+  }
 }
