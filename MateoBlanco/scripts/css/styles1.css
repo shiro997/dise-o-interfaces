@@ -37,9 +37,9 @@
     width: 35%;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 100%){
     .bg {
         left: 50%;
-        margin-left: -512px; }
+        margin-left: -50%; }
 
 }
