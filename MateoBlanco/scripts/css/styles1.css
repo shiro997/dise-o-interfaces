@@ -43,3 +43,30 @@
         margin-left: -50%; }
 
 }
+/*(function () {
+	document.clean = function(){
+		document.getElementById("code").value = "";
+		document.getElementById("pass").value = "";
+	};
+
+	document.redirect = function(){
+		try{
+			var inputCode = parseInt(document.getElementById("code").value);
+			var inputPass = document.getElementById("pass").value;
+			var baseUser = {
+				codigo: 506151060,
+				password: "h3lctcep0"
+			};
+			var route = './MateoBlanco/pages/User.html';
+			if (inputCode == baseUser.codigo && inputPass == baseUser.password) {
+				document.location.href = route;
+				debugger;
+			} else {
+				alert("datos erróneos");
+				document.location.reload();
+			}
+		}catch(ex){
+			console.log(ex);
+		}
+	};
+})();*/

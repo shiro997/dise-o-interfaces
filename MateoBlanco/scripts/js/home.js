@@ -1,21 +1,25 @@
-(function () {
-	document.clean = function(){
-		document.getElementById("code").value = "";
-		document.getElementById("pass").value = "";
-	};
+$(function(){
+	$('#ingresar').click(function(){
 
-	document.redirect = function(){
-		var inputCode = parseInt(document.getElementById("code").value);
-		var inputPass = document.getElementById("pass").value;
 		var baseUser = {
-			codigo: 506151060,
-			password: "h3lctcep0"
+			cod:506151060,
+			pass:'h3lctcep0'
 		};
-		var route = '/MateoBlanco/pages/User.html';
-		if (inputCode == baseUser.codigo && inputPass == baseUser.password) {
-			document.location.href = route;
-		} else {
-			alert("datos erróneos");
+
+		var input1 = parseInt(document.getElementById('code').value);
+		var input2 = document.getElementById('pass').value;
+		
+		if(baseUser.cod == input1 && baseUser.pass == input2){
+			alert('Bienvenido');
+			location.href = '../../pages/User.html';
+		}else{
+			alert('datos erróneos');
+			location.reload();
 		}
-	};
-})();
+
+	});
+	$('#limpiar').click(function(){
+		document.getElementById('code').value = '';
+		document.getElementById('pass').value = '';
+	});
+});
